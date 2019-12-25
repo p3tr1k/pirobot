@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body {background-image: url('/video');
+background-repeat: no-repeat;
+background-size: 100% 127%}
+
+button{
+background:Transparent;
+position: center
+}
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+    $(function() {
+        $('a#frw').bind('click', function() {
+            $.getJSON('/forward',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+    $(function() {
+        $('a#rvs').bind('click', function() {
+            $.getJSON('/reverse',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+    $(function() {
+        $('a#stp').bind('click', function() {
+            $.getJSON('/stop',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+    $(function() {
+        $('a#lft').bind('click', function() {
+            $.getJSON('/left',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+     $(function() {
+        $('a#rgt').bind('click', function() {
+            $.getJSON('/right',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+    $(function() {
+        $('a#c_lft').bind('click', function() {
+            $.getJSON('/cam_left',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+    $(function() {
+        $('a#c_rgt').bind('click', function() {
+            $.getJSON('/cam_right',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+    $(function() {
+        $('a#c_up').bind('click', function() {
+            $.getJSON('/cam_up',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+    $(function() {
+        $('a#c_dwn').bind('click', function() {
+            $.getJSON('/cam_down',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+    $(function() {
+        $('a#c_ctr').bind('click', function() {
+            $.getJSON('/cam_center',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+ $(function() {
+        $('a#light').bind('click', function() {
+            $.getJSON('/light',
+                function(data) {
+            });
+            return false;
+        });
+    });
+
+
+</script>
+
+<div class='container'>
+
+<br>
+
+    <form>
+        <a href=# id=frw style="padding-left: 130px"><button class='btn btn-default'>FRW</button></a>
+        <a href=# id=light style="padding-left: 720px"><button class='btn btn-default'>light</button></a>
+    </form>
+
+<br><br>
+
+    <form>
+        <a href=# id=lft style="padding-left: 40px"><button class='btn btn-default'>LFT</button></a>
+        <a href=# id=stp style="padding-left: 48px"><button class='btn btn-default'>STP</button></a>
+        <a href=# id=rgt style="padding-left: 48px"><button class='btn btn-default'>RGT</button></a>
+    </form>
+
+<br><br>
+
+    <form>
+        <a href=# id=rvs style="padding-left: 130px"><button class='btn btn-default'>RVS</button></a>
+    </form>
+
+</div>
+<div class='container'>
+
+<br>
+
+    <form>
+        <a href=# id=c_up style="padding-left: 730px"><button class='btn btn-default'>C__UP</button></a>
+    </form>
+
+<br><br>
+
+    <form>
+        <a href=# id=c_lft style="padding-left: 625px"><button class='btn btn-default'>C_LFT</button></a>
+        <a href=# id=c_ctr style="padding-left: 48px"><button class='btn btn-default'>C_CTR</button></a>
+        <a href=# id=c_rgt style="padding-left: 48px"><button class='btn btn-default'>C_RGT</button></a>
+    </form>
+
+<br><br>
+
+    <form>
+        <a href=# id=c_dwn style="padding-left: 730px"><button class='btn btn-default'>C_DWN</button></a>
+    </form>
+
+
+</div>
+ 
+</html>
+
